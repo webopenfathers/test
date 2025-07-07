@@ -1,0 +1,115 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/message/message",
+        "pages/my/my",
+        "pages/publish/publish",
+        "components/tabs/tabs",
+        "components/service-preview/service-preview",
+        "components/icon/icon",
+        "components/show-status/show-status",
+        "pages/service-detail/service-detail",
+        "components/avatar/avatar",
+        "components/service-rating/service-rating",
+        "components/rating/rating",
+        "components/safe-area/safe-area",
+        "pages/service-detail/components/consumer-action/consumer-action",
+        "pages/service-detail/components/publisher-action/publisher-action",
+        "pages/login/login",
+        "pages/service-edit/service-edit",
+        "pages/conversation/conversation",
+        "pages/order/order",
+        "components/button/button",
+        "pages/order-success/order-success",
+        "pages/my-order/my-order",
+        "components/service-form/service-form",
+        "components/image-upload/image-upload",
+        "pages/publisher-success/publisher-success",
+        "pages/conversation/components/conversation-window/conversation-window",
+        "pages/conversation/components/message/message",
+        "pages/conversation/components/service-link/service-link",
+        "pages/message/components/conversation-preview/conversation-preview",
+        "components/badge/badge",
+        "components/grid/grid",
+        "components/grid-item/grid-item",
+        "pages/refund-list/refund-list",
+        "pages/my-service/my-service",
+        "components/order-preview/order-preview",
+        "pages/my-order/components/consumer-action/consumer-action",
+        "pages/my-order/components/publisher-action/publisher-action",
+        "pages/order-detail/order-detail",
+        "pages/refund/refund",
+        "components/chat/chat",
+        "components/order-info/order-info",
+        "pages/order-detail/components/publisher-action/publisher-action",
+        "pages/order-detail/components/consumer-action/consumer-action",
+        "pages/rating/rating"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "慕慕到家",
+        "navigationBarTextStyle": "black",
+        "backgroundColorBottom": "#efefef"
+    },
+    "tabBar": {
+        "borderStyle": "white",
+        "selectedColor": "#FBC02D",
+        "color": "#8a8a8a",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "广场",
+                "selectedIconPath": "images/tab-bar/square-selected.png",
+                "iconPath": "images/tab-bar/square.png"
+            },
+            {
+                "pagePath": "pages/publish/publish",
+                "text": "发布",
+                "selectedIconPath": "images/tab-bar/publish-selected.png",
+                "iconPath": "images/tab-bar/publish.png"
+            },
+            {
+                "pagePath": "pages/message/message",
+                "text": "消息",
+                "selectedIconPath": "images/tab-bar/message-selected.png",
+                "iconPath": "images/tab-bar/message.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "selectedIconPath": "images/tab-bar/my-selected.png",
+                "iconPath": "images/tab-bar/my.png"
+            }
+        ]
+    },
+    "requiredPrivateInfos": ["chooseAddress"],
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "i-icon": "/components/icon/icon",
+        "i-tabs": "/components/tabs/tabs",
+        "i-service-preview": "/components/service-preview/service-preview",
+        "i-show-status": "/components/show-status/show-status",
+        "i-avatar": "/components/avatar/avatar",
+        "i-rating": "/components/rating/rating",
+        "i-service-rating": "/components/service-rating/service-rating",
+        "i-safe-area": "/components/safe-area/safe-area",
+        "i-button": "/components/button/button",
+        "i-image-upload": "/components/image-upload/image-upload",
+        "i-badge": "/components/bdge/badge",
+        "i-grid": "/components/grid/grid",
+        "i-grid-item": "/components/grid-item/grid-item",
+        "i-order-preview": "/components/order-preview/order-preview",
+        "i-chat": "/components/chat/chat",
+        "i-order-info": "/components/order-info/order-info",
+        "mp-msg": "weui-miniprogram/msg/msg",
+        "mp-form": "weui-miniprogram/form/form",
+        "mp-cells": "weui-miniprogram/cells/cells",
+        "mp-cell": "weui-miniprogram/cell/cell",
+        "mp-toptips": "weui-miniprogram/toptips/toptips"
+    },
+    "useExtendedLib": {
+        "weui": true
+    }
+}

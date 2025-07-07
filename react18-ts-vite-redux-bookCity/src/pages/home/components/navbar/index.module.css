@@ -1,0 +1,25 @@
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--ygm-font-size-m);
+  padding: 0 var(--ygm-padding-s);
+
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .title {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}

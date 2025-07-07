@@ -1,0 +1,15 @@
+.el-input__wrapper {
+  height: 100%;
+  // 去掉input白色背景
+  --el-input-bg-color: transparent !important;
+}
+
+.el-input__inner {
+  box-shadow: none !important;
+}
+
+// 处理图片灰色底
+
+.el-avatar {
+  --el-avatar-bg-color: none !important;
+}

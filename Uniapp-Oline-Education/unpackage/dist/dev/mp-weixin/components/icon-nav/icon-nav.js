@@ -1,0 +1,11 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/icon-nav/icon-nav"],{258:function(e,n,t){"use strict";t.r(n);var r=t(259),o=t(261);for(var a in o)["default"].indexOf(a)<0&&function(e){t.d(n,e,(function(){return o[e]}))}(a);var i,u=t(32),s=Object(u["default"])(o["default"],r["render"],r["staticRenderFns"],!1,null,null,null,!1,r["components"],i);s.options.__file="components/icon-nav/icon-nav.vue",n["default"]=s.exports},259:function(e,n,t){"use strict";t.r(n);var r=t(260);t.d(n,"render",(function(){return r["render"]})),t.d(n,"staticRenderFns",(function(){return r["staticRenderFns"]})),t.d(n,"recyclableRender",(function(){return r["recyclableRender"]})),t.d(n,"components",(function(){return r["components"]}))},260:function(e,n,t){"use strict";var r;t.r(n),t.d(n,"render",(function(){return o})),t.d(n,"staticRenderFns",(function(){return i})),t.d(n,"recyclableRender",(function(){return a})),t.d(n,"components",(function(){return r}));var o=function(){var e=this,n=e.$createElement;e._self._c},a=!1,i=[];o._withStripped=!0},261:function(e,n,t){"use strict";t.r(n);var r=t(262),o=t.n(r);for(var a in r)["default"].indexOf(a)<0&&function(e){t.d(n,e,(function(){return r[e]}))}(a);n["default"]=o.a},262:function(e,n,t){"use strict";(function(e){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var t={name:"icon-nav",props:{list:Array},data:function(){return{}},methods:{open:function(n){if("webview"!=n.type)switch(n.module){case"test":e.navigateTo({url:"/pages-test/test-list/test-list"});break;case"bbs":e.navigateTo({url:"/pages-bbs/bbs/bbs"});break;case"book":e.navigateTo({url:"/pages-book/book-list/book-list"});break;default:e.navigateTo({url:"/pages/list/list?module="+n.module});break}else this.$openWebview(n.url)}}};n.default=t}).call(this,t(2)["default"])}}]);
+//# sourceMappingURL=../../../.sourcemap/mp-weixin/components/icon-nav/icon-nav.js.map
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/icon-nav/icon-nav-create-component',
+    {
+        'components/icon-nav/icon-nav-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('2')['createComponent'](__webpack_require__(258))
+        })
+    },
+    [['components/icon-nav/icon-nav-create-component']]
+]);

@@ -1,0 +1,28 @@
+<view class="container">
+    <!-- 时间区域 -->
+    <view class="time">{{_message.time}}</view>
+    <!-- 消息区域 -->
+    <view class="message-area" style="{{_message.flow===flowEnum.IN?'':'flex-direction:row-reverse'}}">
+
+        <!-- 头像框 -->
+        <view class="avatar">
+            <image class="avatar-image" src="{{_message.avatar?_message.avatar:'../../../../images/kt.png'}}"></image>
+        </view>
+        <!-- 消息内容 -->
+        <view class="content" style="background-color: {{_message.flow===flowEnum.IN?'#fff':'#f3d066'}}">
+            <!-- 文本消息 -->
+            <block wx:if="{{_message.type===TIM.TYPES.MSG_TEXT}}">
+                <text style="word-break: break-all">{{_message.payload.text}}</text>
+            </block>
+            <!-- 图片类型 -->
+            <block wx:if="{{_message.type===TIM.TYPES.MSG_IMAGE}}">
+                <image src="{{_message.payload.imageInfoArray[1].url}}" bindtap="handlePreview" data-image="{{_message.payload.imageInfoArray[1].url}}" mode="center"></image>
+            </block>
+            <!-- 自定义消息 -->
+            <block wx:if="{{_message.type===TIM.TYPES.MSG_CUSTOM}}">
+                <i-service-link flow='{{_message.flow}}' extension='{{_message.payload.extension}}' service='{{_message.payload.description}}' bind:send="handleSend" bind:select="handleSelect"></i-service-link>
+            </block>
+        </view>
+    </view>
+
+</view>

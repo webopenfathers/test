@@ -1,0 +1,23 @@
+<!-- 自定义属性 -->
+<view bindtap="onTap" class="post-container">
+  <!-- 第一行 -->
+  <view class="post-author-date">
+    <image class="post-author" src="{{postItem.avatar}}" mode="" />
+    <text class="post-date">{{postItem.date}}</text>
+  </view>
+  <!-- 第二行 -->
+  <text class="post-title">{{postItem.title}}</text>
+  <!-- 第三行 -->
+  <image class="post-image" src="{{postItem.imgSrc}}" mode="" />
+  <!-- 第四行 -->
+  <text class="post-content">{{postItem.content}}</text>
+  <!-- 第五行 -->
+  <view class="post-like">
+    <!-- <image class="post-like-image" src="/images/icon/chat.png" mode="" /> -->
+    <l-icon class="post-like-image" size="28" color="#666" name="favor" />
+    <text class="post-like-font">{{postItem.collection}}</text>
+    <!-- <image class="post-like-image" src="/images/icon/view.png" mode="" /> -->
+    <l-icon class="post-like-image" size="32" color="#666" name="eye" />
+    <text class="post-like-font">{{postItem.reading}}</text>
+  </view>
+</view>

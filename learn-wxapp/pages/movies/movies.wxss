@@ -1,0 +1,32 @@
+/* pages/movies/movies.wxss */
+page {
+  background-color: #f2f2f2;
+}
+
+.movie-list {
+  margin-bottom: 30rpx;
+}
+
+.ex-search-bar {
+  display: flex;
+  height: 90rpx !important;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  padding: 30rpx;
+}
+
+/* 伪类-修复space-Between2个元素两端分布的问题 */
+.search-container::after {
+  content: '';
+  width: 200rpx;
+}
+
+
+.movie {
+  margin-bottom: 30rpx;
+}

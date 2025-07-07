@@ -1,0 +1,12 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <!-- <image class="avatar" src="/images/avatar/1.png" mode="" /> -->
+  <!-- 引入Lin-UI的自定义组件 -->
+  <l-avatar class="l-avatar" placement="bottom" open-data="{{['userAvatarUrl','userNickName']}}" size="180" />
+  <!-- 引入Lin-UI的自定义组件 -->
+  <text class="motto">Hello,六月</text>
+  <!-- <button></button> -->
+  <view class="journey-container" bindtap="onTap">
+    <text class="journey">开启小程序之旅</text>
+  </view>
+</view>

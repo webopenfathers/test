@@ -1,0 +1,39 @@
+// js ES6语法
+// wxs 中只能编写ES5语法  不能调用wx的原生API
+
+var touchStartX;
+function handleTouchstart(e) {
+  console.log("start", e);
+  // 数据绑定，记录触摸开始的X 轴的位置
+  touchStartX = e.changedTouches[0].clientX;
+}
+
+function handleTouchend(e, ownerInstance) {
+  var touchEndX = e.changedTouches[0].clientX;
+  // 负数代表手指向左滑动
+  // 正数代表手指向右滑动
+  var distance = touchEndX - touchStartX;
+  // -1：后退(右划) 0：不动  1：前进(左滑)
+  var direction = 0;
+  // 向左滑动,前进
+  if (distance < 0 && distance < -70) {
+    direction = 1;
+  }
+
+  // 向右滑动,后退
+  if (distance > 0 && distance > 70) {
+    direction = -1;
+  }
+
+  if (direction !== 0) {
+    // 1.触发事件
+    // 2.直接调用引用该 WXS 的页面或者组件的方法
+    ownerInstance.callMethod("handleTouchMove", { direction: direction });
+  }
+}
+
+
+module.exports={
+    handleTouchstart:handleTouchstart,
+    handleTouchend:handleTouchend
+}

@@ -1,0 +1,11 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/skeleton/skeleton"],{485:function(e,t,n){"use strict";n.r(t);var r=n(486),c=n(488);for(var u in c)["default"].indexOf(u)<0&&function(e){n.d(t,e,(function(){return c[e]}))}(u);var o,i=n(32),a=Object(i["default"])(c["default"],r["render"],r["staticRenderFns"],!1,null,null,null,!1,r["components"],o);a.options.__file="components/skeleton/skeleton.vue",t["default"]=a.exports},486:function(e,t,n){"use strict";n.r(t);var r=n(487);n.d(t,"render",(function(){return r["render"]})),n.d(t,"staticRenderFns",(function(){return r["staticRenderFns"]})),n.d(t,"recyclableRender",(function(){return r["recyclableRender"]})),n.d(t,"components",(function(){return r["components"]}))},487:function(e,t,n){"use strict";var r;n.r(t),n.d(t,"render",(function(){return c})),n.d(t,"staticRenderFns",(function(){return o})),n.d(t,"recyclableRender",(function(){return u})),n.d(t,"components",(function(){return r}));var c=function(){var e=this,t=e.$createElement;e._self._c},u=!1,o=[];c._withStripped=!0},488:function(e,t,n){"use strict";n.r(t);var r=n(489),c=n.n(r);for(var u in r)["default"].indexOf(u)<0&&function(e){n.d(t,e,(function(){return r[e]}))}(u);t["default"]=c.a},489:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var r={name:"skeleton",props:{width:{type:[Number,String],default:0},height:{type:[Number,String],default:0},circle:{type:Boolean,default:!1},oClass:{type:String,default:""}},data:function(){return{}},computed:{getStyle:function(){return"width:".concat(this.width,";height:").concat(this.height)},getClass:function(){var e="";return this.circle&&(e+="rounded-circle"),"".concat(e," ").concat(this.oClass)}}};t.default=r}}]);
+//# sourceMappingURL=../../../.sourcemap/mp-weixin/components/skeleton/skeleton.js.map
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/skeleton/skeleton-create-component',
+    {
+        'components/skeleton/skeleton-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('2')['createComponent'](__webpack_require__(485))
+        })
+    },
+    [['components/skeleton/skeleton-create-component']]
+]);

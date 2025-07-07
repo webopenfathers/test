@@ -1,0 +1,12 @@
+<l-search-bar bind:linconfirm="onConfirm" bind:lincancel="onCancel" l-class="ex-search-bar" placeholder="盗梦空间" />
+<view wx:if="{{!searchResult}}">
+  <movie-list data-type="in_theaters" bindtap="onGotoMore" movies="{{inTheaters}}" title="正在热映" m-class="movie-list" />
+  <movie-list data-type="coming_soon" bindtap="onGotoMore" movies="{{comingSoon}}" title="即将上映" m-class="movie-list" />
+  <movie-list data-type="top250" bindtap="onGotoMore" movies="{{top250}}" title="豆瓣Top250" m-class="movie-list" />
+</view>
+<view class="search-container" wx:else>
+  <block wx:for="{{searchData}}" wx:key="index">
+    <!-- app.json中配置全局组件 -->
+    <movie class="movie" movie="{{item}}" />
+  </block>
+</view>

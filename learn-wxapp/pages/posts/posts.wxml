@@ -1,0 +1,21 @@
+<view>
+  <!-- 头部Swiper组件 -->
+  <swiper interval="3000" circular indicator-dots autoplay>
+    <swiper-item>
+      <image data-post-id="5" bindtap="onJumpToDetail" src="/images/iqiyi.png" mode="" />
+    </swiper-item>
+    <swiper-item>
+      <image data-post-id="4" bindtap="onJumpToDetail" src="/images/vr.png" mode="" />
+    </swiper-item>
+    <swiper-item>
+      <image data-post-id="3" bindtap="onJumpToDetail" src="/images/wx.png" mode="" />
+    </swiper-item>
+  </swiper>
+
+  <!-- 第一篇文章 -->
+  <block wx:for="{{postData}}" wx:key="index">
+    <!-- 定义事件同样用bind绑定 -->
+    <post bind:postTap="onJumpToDetail" post-item="{{item}}" />
+  </block>
+  <!-- 第一篇文章 -->
+</view>

@@ -1,0 +1,18 @@
+<view class="container">
+    <scroll-view class="message-list" scroll-y show-scrollbar="{{false}}" style="height: {{scrollHeight}}px" enhanced bindscrolltoupper="handleScrolltoupper" scroll-into-view="message-{{intoView}}">
+        <view wx:for="{{messageList}}" wx:key="index" id="message-{{index}}">
+            <i-message message='{{item}}' bind:send='handleSendLink' bind:select='handleSelect'></i-message>
+        </view>
+    </scroll-view>
+
+    <!-- 操作栏 -->
+    <view class="action-bar">
+        <view class="inner-container">
+            <i-icon name='picture' size='60' color="#333" bindtap="handleSendImage"></i-icon>
+            <textarea value="{{text}}" class="conversation-textarea" auto-height cursor-spacing="{{30}}" disable-default-padding fixed hold-keyboard placeholder="不要乱说话哦" bindinput="handleInput"></textarea>
+            <i-button shape='circle' size='mini' bindtap="handleSend">发送</i-button>
+        </view>
+        <i-safe-area area='bottom'></i-safe-area>
+    </view>
+
+</view>
